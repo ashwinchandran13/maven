@@ -1,0 +1,48 @@
+Concept - Static Members Difficulty Level 2
+
+Create a class Employee with below attributes:
+
+id - int
+
+name - String
+
+designation - String
+
+ssnNo - int
+
+age - int
+
+salary - double
+
+ssnNoCounter - int which is a static field and initialize to 0
+
+Make all the attributes private.Create corresponding getters and setters.
+
+Create a constructor which takes all parameters except the static member and the attribute ssnNo in the above sequence.
+The constructor should set the value of attributes as parameter values inside the constructor.Increment the value of the static member by 1 inside the constructor and assign to the attribute ssnNo
+
+Test from the main method by creating  5 objects of the Employee class and print the ssnNoCounter value after creation of each object
+
+Refer below sample main method and test the output:
+
+public class EmployeeDemo {
+public static void main(String args[]){
+Employee employee1= new Employee(28,"bawczld","rpiphga",24,218.0);
+System.out.println("Value of ssnNoCounter : " + Employee.getSsnNoCounter());
+Employee employee2= new Employee(28,"sjfyirr","wsexoca",70,493.0);
+System.out.println("Value of ssnNoCounter : " + Employee.getSsnNoCounter());
+Employee employee3= new Employee(69,"xxtvzeg","vhrnoxk",68,388.0);
+System.out.println("Value of ssnNoCounter : " + Employee.getSsnNoCounter());
+Employee employee4= new Employee(27,"luydzvs","husrfkh",95,887.0);
+System.out.println("Value of ssnNoCounter : " + Employee.getSsnNoCounter());
+Employee employee5= new Employee(33,"ozduycg","wjxzjzz",67,552.0);
+System.out.println("Value of ssnNoCounter : " + Employee.getSsnNoCounter());
+}
+}
+
+Output
+Value of idCounter : 1
+Value of idCounter : 2
+Value of idCounter : 3
+Value of idCounter : 4
+Value of idCounter : 5
